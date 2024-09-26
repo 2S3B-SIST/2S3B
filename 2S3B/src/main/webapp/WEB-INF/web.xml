@@ -3,6 +3,19 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee https://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
+   <!-- 
+    보안 => xml
+   -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+		 /WEB-INF/security/application-datasource.xml
+		</param-value>
+	</context-param>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+   
 	<servlet>
 		<servlet-name>dispatcher</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -31,7 +44,7 @@
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
 	
-	<!--  한글 변환 : reuqest를 사용하지 않는다 = 자동으로 한글 변환 처리 -->
+	<!--  한글 변환  -->
 	<filter>
       <filter-name>encodingFilter</filter-name>
       <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -48,7 +61,5 @@
       <filter-name>encodingFilter</filter-name>
       <url-pattern>/*</url-pattern>
     </filter-mapping>
-	<!-- 에러별 처리 -->
-	<!-- 보안 등록 : Security : 권한부여 , 자동 로그인 , 카카오,네이버를 이용한 로그인 -->
 
 </web-app>
