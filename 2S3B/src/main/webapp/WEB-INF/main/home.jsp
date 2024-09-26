@@ -43,7 +43,7 @@
                               <h3>If you Don’t Practice<br>You <span class="color-yellow">Don’t Derserve</span><br>to win!</h3>
                               <p>You can make a case for several potential winners of<br>the expanded European Championships.</p>
                               <button class="btn btn-primary btn-lg">Button</button>
-                           </div>
+                           </div> 
                         </div>
                      </div>
                   </div>
