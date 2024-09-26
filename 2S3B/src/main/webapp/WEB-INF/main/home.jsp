@@ -5,6 +5,23 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style type="text/css">
+#bannerVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* 동영상이 다른 요소 아래로 위치하게 함 */
+    object-fit: cover; /* 영상이 비율에 맞게 꽉 차도록 설정 */
+}
+
+/* .carousel-inner {
+    position: relative;
+    margin-top: 160px; /* 헤더 높이만큼 여백을 줘서 비디오가 헤더 아래에 위치 */
+} */
+
+</style>
 </head>
 <body>
  
@@ -17,22 +34,25 @@
                   <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                </ol>
                <!-- Wrapper for slides -->
-               <div class="carousel-inner" role="listbox">
-                  <!-- First slide -->
-                  <div class="item active deepskyblue" data-ride="carousel" data-interval="5000">
-                     <div class="carousel-caption">
-                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"></div>
-                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                           <div class="slider-contant" data-animation="animated fadeInRight">
-                              <h3>If you Don’t Practice<br>You <span class="color-yellow">Don’t Derserve</span><br>to win!</h3>
-                              <p>If you use this site regularly and would like to help keep the site on the Internet,<br>
-                                 please consider donating a small sum to help pay..
-                              </p>
-                              <button class="btn btn-primary btn-lg">Read More</button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+ <div class="carousel-inner" role="listbox">
+    <!-- First slide -->
+    <div class="item active deepskyblue" data-ride="carousel" data-interval="5000">
+        <!-- 동영상 배경을 위해 video 태그 사용 -->
+        <video id="bannerVideo" width="100%" height="100%" autoplay muted loop>
+            <source src="../images/rolling_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="carousel-caption">
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"></div>
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <div class="slider-contant" data-animation="animated fadeInRight">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
                   <!-- /.item -->
                   <!-- Second slide -->
                   <div class="item skyblue" data-ride="carousel" data-interval="5000">
@@ -48,7 +68,7 @@
                      </div>
                   </div>
                   <!-- /.item -->
-                  <!-- Third slide -->
+                  <!-- Third slide --> 
                   <div class="item darkerskyblue" data-ride="carousel" data-interval="5000">
                      <div class="carousel-caption">
                         <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"></div>

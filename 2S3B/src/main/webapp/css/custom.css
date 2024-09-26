@@ -23,8 +23,9 @@
  .darkerskyblue {
      background-image:url('../images/bg1.png');
 }
- .deepskyblue {
-     background-image:url('../images/bg1.png');
+.deepskyblue {
+    position: relative;
+    overflow: hidden; /* 동영상이 컨테이너를 넘어가지 않도록 설정 */
 }
  .carousel-indicators {
      bottom: 0;
@@ -188,7 +189,7 @@
      padding: 9px 25px;
      color: #fff;
      font-size: 13px;
-     background: #d8302f;
+     background: #696969;
      border-radius: 50px;
      float: left;
 }

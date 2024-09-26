@@ -54,7 +54,7 @@
       <!-- END LOADER -->
       <section id="top">
          <header>
-            <div class="container">
+            <div class="container" style="width:1500px;">
                <div class="header-top">
                   <div class="row">
                      <div class="col-md-6">
@@ -77,11 +77,11 @@
                            <!-- button section -->
                            <ul class="login">
                               <li class="login-modal">
-                                 <a href="#" class="login"><i class="fa fa-user"></i>Login</a>
+                                 <a href="#" class="login"><i class="fa fa-lock"></i>Login</a>
                               </li>
                               <li>
                                  <div class="cart-option">
-                                    <a href="#"><i class="fa fa-shopping-cart"></i>Register</a>
+                                    <a href="#"><i class="fa fa-user-plus"></i>Register</a>
                                  </div>
                               </li>
                            </ul>
