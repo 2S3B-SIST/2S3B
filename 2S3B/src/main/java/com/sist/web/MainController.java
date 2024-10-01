@@ -12,6 +12,6 @@ public class MainController {
 	// 사용자의 요청에 따라 처리
 	@GetMapping("main.do")
 	public String main_main() {   
-		return "main";
+		return "main";   
 	}
 }
