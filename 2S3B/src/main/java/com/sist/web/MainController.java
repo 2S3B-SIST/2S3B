@@ -11,7 +11,7 @@ public class MainController {
 	// 필요한 클래스 => 스프링에서 가지고 온다 (객체 주소)
 	// 사용자의 요청에 따라 처리
 	@GetMapping("main.do")
-	public String main_main() {
+	public String main_main() {   
 		return "main";
 	}
 }
